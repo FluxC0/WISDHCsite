@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+
+
+}
+
+
+html {
+  font-family: "San Francisco";
+  background: black;
+  color: #0033A0;
+}
+
+nav {
+  border-bottom: 5px solid #0033A0;
+}
+
+.mainnav ol  {
+  list-style-type: none;
+  padding-left: 0 
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  color: #0033A0;
+  text-decoration: none;
+  transition: color 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.nav-item a::visited {
+
+}
+
+
+
+.mainnav li {
+  display: inline-block;
+  padding: 2px 0px 0 0px;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
+}
+.mainnav a:hover {
+  color: white;
+}
+.mainnav li:hover {
+  transform: translateY(-5px); /* Move the item up by 5px */
+  color: white;
+}
+
+.mainnav li::after {
+  display: inline-block;
+  color: #0033A0;
+  content: "•";
+  padding: 0 3px;
+}
+
+.mainnav ol li:last-child::after {
+  content: ""
+}
+
+
+

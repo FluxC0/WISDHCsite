@@ -1,5 +1,7 @@
 ---
-
+import "../styles/global.css";
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 ---
 
 <html lang="en">
@@ -10,7 +12,22 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+  <body>
+    <a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 20px; z-index: 999;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
+    <Header />
+    <h1 class="maintext">WISD Hack Club</h1>
+    <h2>The coolest Hack Club around.</h2>
+    <br>
+    <br>
+    <h4>Hello!</h4>
+    <p>This is the website for the Weatherford ISD Hack Club. I'll eventually have all of our member's projects up here, but for now i'll have it serve as an FAQ!</p>
+
+    <br>
+    <h1>Q: Hack... that sounds bad.</h1>
+    <p> No worries! Hack in this case simply means creating things with technology, like software, or hardware even!</p>
+    <br>
+    <h1>Q: How do I contribute?</h1>
+    <p> Right now, we aim to get $1000 by the second semester. Check soon for more details!</p>
+    <Footer />
 	</body>
 </html>
