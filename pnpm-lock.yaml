@@ -11,6 +11,9 @@ importers:
       '@astrojs/check':
         specifier: ^0.9.4
         version: 0.9.4(typescript@5.6.3)
+      '@formbricks/js':
+        specifier: ^3.0.1
+        version: 3.0.1(zod@3.23.8)
       astro:
         specifier: ^4.16.13
         version: 4.16.13(rollup@4.27.2)(typescript@5.6.3)
@@ -306,6 +309,11 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@formbricks/js@3.0.1':
+    resolution: {integrity: sha512-DpDod2HL8BbXxT5xvLjdYXtIajf/t8OhwLRkHLxYtMSTnCHqqBNZhNXFb4yf4cy04JIpmP1qyjZeoAUc3xbyCg==}
+    peerDependencies:
+      zod: 3.x
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2124,6 +2132,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@formbricks/js@3.0.1(zod@3.23.8)':
+    dependencies:
+      zod: 3.23.8
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
